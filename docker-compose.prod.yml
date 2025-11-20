@@ -16,6 +16,9 @@ services:
       DB_DATABASE: redes
       DB_USERNAME: root
       DB_PASSWORD: ""
+      SESSION_DRIVER: file
+      CACHE_DRIVER: file
+      QUEUE_CONNECTION: sync
     depends_on:
       - db
     ports:
