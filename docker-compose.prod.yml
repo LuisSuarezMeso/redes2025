@@ -3,7 +3,6 @@ version: "3.8"
 services:
   app:
     image: wishosz/redesii:latest
-    container_name: redesii_app_prod
     working_dir: /var/www/html
     command: php artisan serve --host=0.0.0.0 --port=8000
     environment:
@@ -27,7 +26,6 @@ services:
 
   db:
     image: mysql:8.0
-    container_name: redesii_db_prod
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_ROOT_PASSWORD: ""
