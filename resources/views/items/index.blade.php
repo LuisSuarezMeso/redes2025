@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="d-flex justify-content-between align-items-center mb-3">
-    <h1>PROYECTO FINAL REDES II hola inge!...</h1>
+    <h1>PROYECTO FINAL REDES II hola</h1>
     <a href="{{ route('items.create') }}" class="btn btn-primary">Nuevo Item</a>
 </div>
 
